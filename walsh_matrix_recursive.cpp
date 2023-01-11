@@ -43,7 +43,7 @@ vector<vector<int>> generate(int n)
             res[i + ss.size()][j + ss.size()] = -ss[i][j];
         }
     }
-    cout << "returning n=" << n << endl;
+    cout << "returning generate(" << n <<")" << endl;
     return res;
 }
 int main()
