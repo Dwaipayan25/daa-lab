@@ -5,7 +5,7 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class det
+class Codechef
 {
     static void printArr(int a[][]){
         for(int i=0;i<a.length;i++){
@@ -33,8 +33,6 @@ class det
                 }
                 row++;
             }
-            System.out.println("array printing"+i);
-            printArr(arr1);
             int wws=determinant(arr1)*arr[i][0];
             if(i%2==0){
                 det=det+wws;
@@ -47,7 +45,7 @@ class det
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-		int matrix[][]={{1,2,0},{4,5,6},{7,8,9}};
+		int matrix[][]={{0,0,0},{0,0,0},{0,0,0}};
 		int res=determinant(matrix);
 		System.out.println("Determinant = "+res);
 	}
