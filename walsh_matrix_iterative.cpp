@@ -4,6 +4,13 @@ int main(){
     int n;
     cout<<"Enter n for 2^n : ";
     cin>>n;
+    if(n<0){
+        cout<<"Error\n";
+        return 0;
+    }else if(n==0){
+        cout<<"1\n";
+        return;
+    }
     vector<vector<vector<int>>> dp(n+1);
     vector<vector<int>> dpp={{1}};
     dp[0]=dpp;
