@@ -1,0 +1,25 @@
+xaxis=zeros(1,100);
+yaxis=zeros(1,100);
+y1axis=zeros(1,100);
+k=1;
+
+for i=10:10:100
+    xaxis(k)=i;
+    a=round(100*rand(1,i));
+
+    c=0;
+    ma=-1
+    for j=1:i
+        c=c+1;
+        if(a(j)>ma)
+            ma=a(j)
+        end
+    end
+    yaxis(k)=c;
+    y1axis(k)=c;
+    k=k+1;
+end
+plot(xaxis,yaxis,xaxis,y1axis);
+xlabel("No of elements")
+ylabel("No of comparisions")
+
